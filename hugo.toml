@@ -49,6 +49,7 @@ uglyURLs = false
     categories = "/categories/:slug/"
     tags = "/tags/:slug/"
 
+
 # 类别
 [taxonomies]
     # category = "categories"
@@ -81,7 +82,7 @@ uglyURLs = false
     [markup.highlight]
         codeFences = true
         guessSyntax = false
-        lineNos = false
+        lineNos = true
         lineNumbersInTable = true
         noClasses = false
     [markup.tableOfContents]
@@ -114,7 +115,7 @@ uglyURLs = false
     includeNewer = true
     toLower = true
     [[related.indices]]
-        name = "categories"
+        name = "series"
         weight = 100
     [[related.indices]]
         name = "tags"
@@ -189,41 +190,39 @@ uglyURLs = false
 
 [menu]
     ## 菜单栏
-    # [[menu.main]]
-    #     pageref = "/"
-    #     name = "首页"
-    #     weight = 1
-    #     pre = "internal"
-    #     post = "home"
-    # [[menu.main]]
-    #     pageref = "/posts/"
-    #     name = "文章"
-    #     weight = 2
-    #     pre = "internal"
-    #     post = "archive"
-    # [[menu.main]]
-    #     pageref = "/categories/"
-    #     name = "分类"
-    #     weight = 3
-    #     pre = "internal"
-    #     post = "th"
-    # [[menu.main]]
-    #     pageref = "/tags/"
-    #     name = "标签"
-    #     weight = 4
-    #     pre = "internal"
-    #     post = "tags"
-    # [[menu.main]]
-    #     pageref = "/about/"
-    #     name = "关于"
-    #     weight = 5
-    #     pre = "internal"
-    #     post = "user-circle"
     [[menu.main]]
-        weight = 6
+        pageref = "/tags/"
+        name = "标签"
+        weight = 1
+        pre = "internal"
+        post = "tags"
+        identifier = "tags"
+    [[menu.main]]
+        pageref = "/categories/"
+        name = "分类"
+        weight = 2
+        pre = "internal"
+        post = "th"
+        identifier = "categories"
+     [[menu.main]]
+        pageref = "/posts/"
+        name = "归档"
+        weight = 3
+        pre = "internal"
+        post = "archive"
+        identifier = "archives"
+    [[menu.main]]
+        pageref = "/about/"
+        name = "关于"
+        weight = 4
+        pre = "internal"
+        post = "user-circle"
+        identifier = "about"
+    [[menu.main]]
+        weight = 5
         identifier = "theme-switcher"
     [[menu.main]]
-        weight = 7
+        weight = 6
         identifier = "lang-switcher"
     [[menu.main]]
     #     weight = 8
@@ -398,7 +397,7 @@ uglyURLs = false
     displayPostsCount = true
 
     # 设置一个非负数来限制每一分类下展示的文章数
-    limitPostsLimit = -1
+    limitPostsLimit = 5
 
 
     ######################################
@@ -467,7 +466,7 @@ uglyURLs = false
     # 说明：分区的名字即站点的 content 目录下
     #      的文件夹的名字。
 
-    # mainSections = ["life", "tech"]
+    # mainSections = ["posts"]
 
 
     ######################################
@@ -962,9 +961,9 @@ uglyURLs = false
     # 菜单栏
     fontFamilyMenu = ""
     # 文章标题、文章副标题、列表标题、列表的年份和月份标题、相关文章标题、文章上下篇标题、表格的表头、定义列表中的术语
-    fontFamilyTitle = "'Noto Serif SC', 'EB Garamond', serif"
+    fontFamilyTitle = "'Noto Serif SC', 'Amstelvar', serif"
     # 分节标题、目录标题
-    fontFamilyHeadings = "'Noto Serif SC', 'EB Garamond', serif"
+    fontFamilyHeadings = "'Noto Serif SC', 'Amstelvar', serif"
     # 代码、上标、文章元信息、文章更新徽章、文章的 Git 版本信息、极简页脚、不蒜子站点浏览计数
     fontFamilyCode = "'Source Code Pro', 'Noto Serif SC', monospace"
     # 引用
@@ -976,10 +975,10 @@ uglyURLs = false
     # 页脚
     fontFamilyFooter = ""
     # 主体
-    fontFamilyBody = "'EB Garamond', 'Noto Serif SC', serif"
+    fontFamilyBody = "'Source Code Pro', 'Noto Serif SC', monospace"
 
     # 网络字体链接
-    fontsLink = "https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Noto+Serif+SC:wght@400;500;700&family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    fontsLink = "https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700&family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Cinzel+Decorative:wght@700&display=swap"
     # 说明：要想读者一定体验到你设置的字体，最好
     #      采用网络字体。MemE 主题目前仅支持
     #      Google Fonts 的链接，请前往
