@@ -3,31 +3,24 @@ languageCode: zh-cn
 theme: hugo-theme-stack
 paginate: 5
 title: aynix
-copyright: Example Person
+copyright: 
 
 languages:
-    en:
-        languageName: English
-        title: aynix
-        weight: 1
-        params:
-            description: blog of aynix!
+    # en:
+    #     languageName: English
+    #     title: aynix
+    #     weight: 1
+    #     params:
+    #         description: blog of aynix!
     zh-cn:
         languageName: 中文
         title: aynix
         weight: 2
         params:
             description: blog of aynix!
-    ar:
-        languageName: عربي
-        languagedirection: rtl
-        title: موقع تجريبي
-        weight: 3
-        params:
-            description: وصف تجريبي
 
 # Change it to your Disqus shortname before using
-disqusShortname: hugo-theme-stack
+disqusShortname: 
 
 # GA Tracking ID
 googleAnalytics:
@@ -55,14 +48,14 @@ params:
 
     footer:
         since: 2023
-        customText:
+        customText: 
 
     dateFormat:
-        published: Jan 02, 2006
-        lastUpdated: Jan 02, 2006 15:04 MST
+        published: 2006-01-02
+        lastUpdated: 2006-01-02
 
     sidebar:
-        emoji: 🍥
+        emoji: ✝
         subtitle: Life Is Beautiful.
         avatar:
             enabled: true
@@ -75,11 +68,11 @@ params:
         readingTime: true
         license:
             enabled: true
-            default: Licensed under CC BY-NC-SA 4.0
+            default: 本文采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可协议，转载请注明出处。
 
     comments:
         enabled: true
-        provider: disqus
+        provider: utterances
 
         disqusjs:
             shortname:
@@ -206,14 +199,16 @@ menu:
         - identifier: github
           name: GitHub
           url: https://github.com/aynix
+          weight: 1
           params:
               icon: brand-github
 
-        # - identifier: twitter
-        #   name: Twitter
-        #   url: https://twitter.com
-        #   params:
-        #       icon: brand-twitter
+        - identifier: weibo
+          name: Weibo
+          url: https://weibo.com/aynixing
+          weight: 2
+          params:
+              icon: brand-weibo
 
 related:
     includeNewer: true
