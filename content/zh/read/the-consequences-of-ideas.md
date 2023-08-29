@@ -1,16 +1,12 @@
----
-title: "《思想的结果》读书笔记"
-description: 
-date: 2023-08-28
-image: cover.jpg
-math: true
-toc: true
-hidden: false
-comments: true
-draft: false
-tags: ["read","sproul"]
-categories: ["read"]
----
++++
+title = "《思想的结果》读书笔记"
+date = "2023-08-28"
+tags = ["read", "sproul"]
+slug = "read"
+indent = true
+dropCap = false
++++
+
 很久没有写文章了，啊，好难写。
 
 # 前言
