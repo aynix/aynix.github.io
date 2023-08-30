@@ -46,7 +46,7 @@ uglyURLs = false
 
 # URL 结构
 [permalinks]
-    categories = "/categories/:slug/"
+    # categories = "/categories/:slug/"
     tags = "/tags/:slug/"
 
 
@@ -114,9 +114,9 @@ uglyURLs = false
     threshold = 80
     includeNewer = true
     toLower = true
-    [[related.indices]]
-        name = "series"
-        weight = 100
+    # [[related.indices]]
+    #     name = "series"
+    #     weight = 100
     [[related.indices]]
         name = "tags"
         weight = 95
@@ -191,43 +191,25 @@ uglyURLs = false
 [menu]
     ## 菜单栏
     [[menu.main]]
-        pageref = "/tags/"
-        name = "标签"
+        pageref = "/read/"
+        name = "读书"
         weight = 1
         pre = "internal"
-        post = "tags"
-        identifier = "tags"
-    [[menu.main]]
-        pageref = "/categories/"
-        name = "分类"
-        weight = 2
-        pre = "internal"
-        post = "th"
-        identifier = "categories"
-     [[menu.main]]
-        pageref = "/posts/"
-        name = "归档"
-        weight = 3
-        pre = "internal"
-        post = "archive"
-        identifier = "archives"
+        post = "wpexplorer"
+        identifier = "read"
     [[menu.main]]
         pageref = "/about/"
         name = "关于"
-        weight = 4
+        weight = 2
         pre = "internal"
         post = "user-circle"
         identifier = "about"
     [[menu.main]]
-        weight = 5
+        weight = 3
         identifier = "theme-switcher"
     [[menu.main]]
-        weight = 6
+        weight = 4
         identifier = "lang-switcher"
-    [[menu.main]]
-    #     weight = 8
-    #     identifier = "search"
-    #     post = "search"
 
 
 
@@ -278,7 +260,7 @@ uglyURLs = false
     # 如果否，则会使用你的站点标题作为默认值，并
     # 以文字的形式显示，下方可配置字号和字色。字
     # 体请到底部的字体部分配置。单位：em。
-    siteBrandFontSize = 1
+    siteBrandFontSize = 2
     siteBrandFontColor = "var(--color-contrast-high)"
 
 
@@ -466,7 +448,7 @@ uglyURLs = false
     # 说明：分区的名字即站点的 content 目录下
     #      的文件夹的名字。
 
-    # mainSections = ["read"]
+    mainSections = ["read"]
 
 
     ######################################
@@ -600,7 +582,7 @@ uglyURLs = false
     # 说明：仅在生产环境（production）下渲染
 
     # 是否开启（全局设置）
-    enableComments = false
+    enableComments = true
     # 说明：文章的 Front Matter 中的 `comments`
     #      的优先级高于此处
 
@@ -633,8 +615,8 @@ uglyURLs = false
     # 说明：https://valine.js.org/
 
     ## Utterances
-    enableUtterances = false
-    utterancesRepo = ""
+    enableUtterances = true
+    utterancesRepo = "aynix/blog_data"
     utterancesIssueTerm = "pathname"
     utterancesTheme = "github-light"
     utterancesThemeDark = "photon-dark"
@@ -828,7 +810,7 @@ uglyURLs = false
     # 文章目录
 
     # 是否开启（全局设置）
-    enableTOC = false
+    enableTOC = true
     # 说明：文章的 Front Matter 中的 `toc`
     #      的优先级高于此处
 
@@ -973,7 +955,7 @@ uglyURLs = false
     # 说明文字
     fontFamilyCaption = ""
     # 页脚
-    fontFamilyFooter = ""
+    fontFamilyFooter = "'Source Code Pro', 'Noto Serif SC', monospace"
     # 主体
     fontFamilyBody = "'Source Code Pro', 'Noto Serif SC', monospace"
 
